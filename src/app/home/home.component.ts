@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
 
   constructor() { }
 
+  openPDF() {
+    window.open('assets/adrian-kuo-resume-2022.pdf', '_blank')
+  }
+
   ngOnInit() {
     this.outerRowHeight = (window.innerWidth < 768) ? "100px" : "2:0.8";
     this.innerRowHeight = (window.innerWidth < 768) ? "35px" : "1:1";
